@@ -920,3 +920,15 @@ body:after{display:none!important}.app-shell:after{content:'';display:block;posi
 .section-head h2{font-family:Georgia,'Times New Roman',serif;font-size:24px;font-weight:800;letter-spacing:-.02em}.welcome-content .eyebrow{color:#f5f4ee!important}
 
 .view{animation:none!important;opacity:1!important;transform:none!important}
+
+
+/* Mobile breathing room and aligned glass navigation. */
+.screen{padding-bottom:190px}
+.slots{row-gap:14px;column-gap:12px;margin-bottom:24px}
+#to-confirm{margin-top:10px;margin-bottom:34px}
+.edit-booking-actions{gap:14px;margin-bottom:30px}
+.bottom-nav{box-sizing:border-box;width:min(calc(100vw - 32px),454px);height:72px;padding:5px 4px;gap:0}
+.nav-item{box-sizing:border-box;flex:0 0 20%;width:20%;min-width:0;height:60px;padding:0 2px;gap:4px}
+.nav-item small{white-space:nowrap;font-size:10px}
+.nav-glass-highlight{width:calc(20% - 4px);height:60px;top:5px;left:2px}
+.view .primary-btn.full{margin-top:16px;margin-bottom:30px}
