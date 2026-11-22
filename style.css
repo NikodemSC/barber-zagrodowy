@@ -932,3 +932,11 @@ body:after{display:none!important}.app-shell:after{content:'';display:block;posi
 .nav-item small{white-space:nowrap;font-size:10px}
 .nav-glass-highlight{width:calc(20% - 4px);height:60px;top:5px;left:2px}
 .view .primary-btn.full{margin-top:16px;margin-bottom:30px}
+
+
+/* Keep the fixed menu attached to the phone viewport during iOS overscroll. */
+@media(max-width:699px){html,body{overflow-x:clip}.app-shell{overflow:visible}.bottom-nav{position:fixed;bottom:calc(env(safe-area-inset-bottom,0px) + 12px);transform:translate3d(-50%,0,0);-webkit-transform:translate3d(-50%,0,0)}}
+/* Align the moving glass tile exactly with each menu column. */
+.nav-glass-highlight{left:4px;width:calc(20% - 8px);transform:translateX(var(--active-nav-shift,0%))}
+/* Keep photo borders and shadows inside the image edges. */
+.photo-stack img,.wide-photo,.gallery-grid img{box-sizing:border-box;display:block;max-width:100%}
