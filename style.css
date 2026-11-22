@@ -946,3 +946,7 @@ body:after{display:none!important}.app-shell:after{content:'';display:block;posi
 
 /* Animate the selected glass tile as its menu column changes. */
 .nav-glass-highlight{transition:left .52s cubic-bezier(.22,1.5,.36,1)}
+
+
+/* Keep the menu visible at the viewport edge on desktop as well as mobile. */
+.bottom-nav{position:fixed!important;z-index:50!important;bottom:calc(env(safe-area-inset-bottom,0px) + 12px)!important;}
