@@ -943,3 +943,6 @@ body:after{display:none!important}.app-shell:after{content:'';display:block;posi
 
 /* Position the menu glass tile by column, so it stays centered on every tab. */
 .nav-glass-highlight{left:calc(4px + var(--active-nav-shift,0%));width:calc(20% - 8px);transform:none!important}
+
+/* Animate the selected glass tile as its menu column changes. */
+.nav-glass-highlight{transition:left .52s cubic-bezier(.22,1.5,.36,1)}
